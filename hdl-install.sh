@@ -16,7 +16,7 @@ do
       mount +OPL #mount specific partition on ps2 hdd
       cd ART #changes directory on the hdd
       dir=pwd
-      lcd ${temp} #lcd controls which directory on the host machine we are currently in
+      lcd ${dir} #lcd controls which directory on the host machine we are currently in
       for img in *;
       do
         if [[ "${file##*.}" == "png" ]] || if [[ "${file##*.}" == "jpg" ]]; then
